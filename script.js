@@ -7,7 +7,9 @@ class Calculator{
 
     addToViewer(value) {
         const currentCalculationLength = this.currentCalculation.length;
-        const valueToAdd = currentCalculationLength === 0 || value === '.' || this.currentCalculation[currentCalculationLength - 1] === '.' ? value : ' ' + value;
+        const nonNumbers = ['(', ')', '+', '-', '/', '*'];
+        const valueToAdd = nonNumbers.includes(value) || nonNumbers.includes(this.currentCalculation[currentCalculationLength - 1]) ? ' ' + value : value;
+
         this.currentCalculation += valueToAdd;
         this.viewer.innerHTML = this.currentCalculation;
     }
