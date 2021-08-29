@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="row">
+            <div id="viewer">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                    <button class="main-button" onclick="Calc.clear()">Clear</button>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.calculateResult()">=</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(7)">
+                    7
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(8)">
+                    8
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(9)">
+                    9
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer('+')">
+                    +
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(4)">
+                    4
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(5)">
+                    5
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(6)">
+                    6
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer('-')">
+                    -
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(1)">
+                    1
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(2)">
+                    2
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(3)">
+                    3
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer('/')">
+                    /
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer(0)">
+                    0
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer('.')">
+                    .
+                </button>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col">
+                        <button class="main-button" onclick="Calc.addToViewer('(')">(</button>
+                    </div>
+                    <div class="col">
+                        <button class="main-button" onclick="Calc.addToViewer(')')">)</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <button class="main-button" onclick="Calc.addToViewer('*')">
+                    *
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
